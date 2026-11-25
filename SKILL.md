@@ -5,7 +5,7 @@ description: Research, write, voice, edit, quality-check, and caption short vert
 
 # INSIDE THE LEADER: từ kịch bản đến video
 
-Áp dụng quy trình này khi người dùng muốn tìm ý tưởng, viết hook, tạo giọng Vbee, dựng hoặc sửa video của series INSIDE THE LEADER. Chỉ làm những công đoạn người dùng yêu cầu trong lượt hiện tại. Dùng khung xanh lá nhạt và logo của series do người dùng cung cấp; không thay bằng mẫu của kênh khác. Các tệp tư liệu, giọng đọc và nhạc không nằm trong skill công khai này. Tìm chúng trong thư mục người dùng chỉ định trước khi làm.
+Áp dụng quy trình này khi người dùng muốn tìm ý tưởng, viết hook, tạo giọng Vbee, dựng hoặc sửa video của series INSIDE THE LEADER. Chỉ làm những công đoạn người dùng yêu cầu trong lượt hiện tại. Dùng khung xanh lá nhạt và logo của series do người dùng cung cấp; không thay bằng mẫu của kênh khác. Mười mẫu nhạc hook người dùng đã cung cấp nằm tại `assets/audio/hook-library/01.m4a` đến `10.m4a`. Tư liệu video, giọng đọc và các asset thương hiệu khác cần tìm trong thư mục người dùng chỉ định trước khi làm.
 
 ## 1. Chọn nội dung và xác minh
 
@@ -42,7 +42,7 @@ Tạo thử một mục, nghe kiểm phát âm và dấu tiếng Việt, rồi l
 ### Hình, tiếng và nhạc
 
 - Xem nguồn ở tốc độ thường, chọn điểm hook đúng cao trào, rồi body đủ đầu, giữa, cuối của thao tác. Không lặp hoặc kéo dài footage để đạt thời lượng giả. Chỉ dùng slow motion nếu nguồn đã có hoặc ghi rõ việc làm chậm.
-- Giữ giọng hook rõ. Theo mặc định, chọn đoạn phù hợp từ **nhạc người dùng cung cấp**, tránh đoạn im lặng/outro; trộn nhạc trong hook ở **−20 dB** và fade ngắn. Bỏ nhạc blockbuster trailer cũ. Nếu người dùng yêu cầu nhạc chạy cả clip, dùng cùng mạch nhạc qua ranh hook/body, cắt hoặc crossfade điểm lặp để không có khoảng lặng; kiểm mức nhạc dưới lời và tiếng hiện trường.
+- Giữ giọng hook rõ. Theo mặc định, chọn đoạn phù hợp từ **10 mẫu nhạc trong `assets/audio/hook-library/`** theo [bảng tình huống](references/hook-music-cases-2026-11-16.md), tránh đoạn im lặng/outro; trộn nhạc trong hook ở **−20 dB** và fade ngắn. Bỏ nhạc blockbuster trailer cũ. Nếu người dùng yêu cầu nhạc chạy cả clip, dùng cùng mạch nhạc qua ranh hook/body, cắt hoặc crossfade điểm lặp để không có khoảng lặng; kiểm mức nhạc dưới lời và tiếng hiện trường.
 - Với montage nhiều đoạn, lấy **một dải âm liên tục** từ video gốc hoặc một track nhạc body, tắt âm từng clip hình, rồi đặt dải âm đó xuyên suốt body. Việc chuyển cảnh hình không được làm âm thanh ngắt. Nếu nguồn có người nói tiếng Việt hoặc nước ngoài, thêm sub tiếng Việt cho lời nói trong body; nếu chỉ có nhạc, không thêm sub mô tả.
 - Nguồn HDR PQ/HLG cần được chuyển sang SDR trước khi ghép PNG và chữ; xuất H.264 `yuv420p` với **primaries, transfer và matrix BT.709**. Kiểm metadata bằng `ffprobe` và mở MP4 trong trình phát macOS/QuickTime tại **khung hình đầu**. Nhãn màu HDR còn sót có thể làm khung xanh nhạt thành xanh neon dù ảnh trích bằng FFmpeg trông đúng.
 
